@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GridDynamicsTest</string>
+    <string name="perform">Perform</string>
+    <string name="result">Result</string>
+    <string formatted="false" name="malformed_url">Url %s is malformed</string>
+    <string formatted="false" name="formatted_result">%s - %s</string>
+    <string name="network_error">Network error</string>
+    <string name="unknown_host_error">Unknown host error</string>
+    <string name="sdcard_error">SDcard error</string>
+    <string name="initial_url">http://www.griddynamics.com/</string>
+
+
+</resources>
