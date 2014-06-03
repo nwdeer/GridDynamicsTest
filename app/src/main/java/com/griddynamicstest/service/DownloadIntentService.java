@@ -8,7 +8,6 @@ import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.KeyEvent;
-import android.webkit.URLUtil;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -54,6 +53,7 @@ public class DownloadIntentService extends IntentService {
                 case ACTION_DOWNLOAD:
                     final String stringUrl = intent.getStringExtra(EXTRA_URL);
                     final LocalBroadcastManager localBroadcastManager = LocalBroadcastManager.getInstance(this);
+
                     if (!isUrlValid(stringUrl)) {
                         Intent errorIntent = new Intent(MALFORMED_URL_ERROR);
                         errorIntent.putExtra(EXTRA_URL, stringUrl);
