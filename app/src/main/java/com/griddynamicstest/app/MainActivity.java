@@ -28,7 +28,8 @@ public class MainActivity extends Activity {
                             String.format(
                                     getResources().getString(R.string.formatted_result),
                                     intent.getStringExtra(DownloadIntentService.EXTRA_URL),
-                                    intent.getIntExtra(DownloadIntentService.EXTRA_TOTAL_PRINTABLE, -1)));
+                                    intent.getIntExtra(DownloadIntentService.EXTRA_TOTAL_PRINTABLE, -1))
+                    );
                     break;
                 case DownloadIntentService.MALFORMED_URL_ERROR:
                     handleUrlError(intent.getStringExtra(DownloadIntentService.EXTRA_URL));
